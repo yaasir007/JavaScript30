@@ -34,15 +34,40 @@
       'Berne, Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin', 'Ben-Gurion, David', 'Bevel, Ken', 'Biden, Joseph', 'Bennington, Chester', 'Bierce, Ambrose',
       'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
     ];
-    
+
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    const bornInvestor = inventors.filter((investor) => {
+      if (investor.year > 1499 && investor.year < 1600) {
+        return investor;
+      }
+    });
+    // console.log(bornInvestor);
+
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
+    // const fullNames = inventors.map((investor) => {
+    //   return investor.first + " " + investor.last;
+    // });
+    // console.log(fullNames);
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+
+
+
+    // const sortingInvestors = inventors.map((inventor) => {
+    //   inventor.sort((inventor.year, inventor.passed) => {
+    //     return inventor.passed - inventor.year;
+    //   })
+    // });
+
+
+
+
+
+    console.log(sortingInvestors);
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
